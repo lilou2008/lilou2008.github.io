@@ -1,0 +1,19 @@
+sku,nombre,categoria,precio_referencial,stock,imagen,descripcion
+CHG-ESP32-001,Placa de desarrollo ESP32,Placas de desarrollo,S/ 45.00,Consultar,assets/img/producto-camara-ip.jpg,Placa programable con conectividad WiFi y Bluetooth para proyectos IoT.
+CHG-SEN-003,Sensor de temperatura y humedad,Sensores,S/ 22.00,Consultar,assets/img/servicio-automatizacion.jpg,Sensor digital para medicion ambiental en proyectos de automatizacion.
+CHG-SEN-004,Sensor de movimiento PIR,Sensores,S/ 18.00,Consultar,assets/img/producto-camara-ip.jpg,Sensor infrarrojo para deteccion de movimiento en interiores.
+CHG-ENE-005,Fuente de alimentacion regulable,Fuentes y energia,S/ 120.00,Consultar,assets/img/servicio-electrica.jpg,Fuente de escritorio para pruebas y alimentacion de circuitos electronicos.
+CHG-MMV-005,Sensor de presencia mmWave,Sensores,S/ 85.00,Consultar,assets/img/servicio-automatizacion.jpg,Sensor de radar para detectar presencia y movimiento con alta sensibilidad.
+CHG-REL-006,Modulo de rele WiFi,Automatizacion,S/ 35.00,Consultar,assets/img/servicio-hardware.jpg,Modulo para conmutar cargas electricas desde una red inalambrica.
+CHG-KIT-007,Kit de iniciacion con protoboard,Prototipado,S/ 95.00,Consultar,assets/img/servicio-hardware.jpg,Kit con protoboard cables y componentes para proyectos electronicos.
+CHG-RPI-008,Computadora de placa unica Raspberry Pi,Computacion embebida,S/ 280.00,Consultar,assets/img/servicio-software.jpg,Computadora compacta para proyectos de automatizacion programacion y multimedia.
+CHG-CAM-009,Modulo de camara para proyectos IoT,Vision artificial,S/ 75.00,Consultar,assets/img/producto-kit-camara.jpg,Camara compacta para integrar captura de imagen en proyectos embebidos.
+CHG-PLC-010,Controlador logico compacto,Automatizacion,S/ 680.00,Consultar,assets/img/servicio-automatizacion.jpg,Controlador para secuencias y procesos de automatizacion pequenos.
+CHG-LOR-011,Modulo de comunicacion LoRa,Comunicaciones,S/ 60.00,Consultar,assets/img/servicio-hardware.jpg,Modulo de radio de largo alcance para telemetria e IoT.
+CHG-MOT-012,Driver para motor y servomotor,Robotica,S/ 48.00,Consultar,assets/img/servicio-hardware.jpg,Controlador para motores DC paso a paso y servomotores en proyectos de robotica.
+CHG-MEG-013,Maleta de altas resistencias para calibracion de megohmetros,Equipos electricos,S/ 850.00,Consultar,assets/img/MALETA_MEGOHMETRO.jpeg,Maleta de altas resistencias para calibrar megohmetros.
+CHG-DEC-014,Decada / telurometro de prueba,Equipos electricos,S/ 320.00,Consultar,assets/img/DECADA_TELU.jpg,Equipo de prueba para mediciones y calibraciones electricas.
+CHG-PIN-015,Pinza amperimetrica,Equipos electricos,S/ 180.00,Consultar,assets/img/pinza.jpg,Instrumento para medir corriente y variables electricas sin desconectar el circuito.
+CHG-MUL-016,Multimetro digital,Equipos electricos,S/ 95.00,Consultar,assets/img/multimetro.jpg,Instrumento para medir voltaje corriente resistencia y continuidad.
+CHG-MEG-017,Megohmetro profesional,Equipos electricos,S/ 1250.00,Consultar,assets/img/megohmetro.png,Equipo para medir la resistencia de aislamiento en instalaciones electricas.
+CHG-TEL-018,Telurómetro digital,Equipos electricos,S/ 980.00,Consultar,assets/img/telurometro.jpg,Equipo para medir la resistencia de puesta a tierra.

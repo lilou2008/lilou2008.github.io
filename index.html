@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHG Control & Systems | Catálogo de Servicios 2026</title>
+<meta name="description" content="Soluciones integrales en ingeniería eléctrica, automatización, seguridad electrónica, redes, desarrollo de software y hardware. +10 años de experiencia. Lima, Perú.">
+<meta name="theme-color" content="#0a0e1a">
+
+<meta property="og:title" content="CHG Control & Systems - Catálogo de Servicios 2026">
+<meta property="og:description" content="Innovación • Control • Confianza — Ingeniería, automatización, seguridad electrónica y desarrollo tecnológico.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lilou2008.github.io/">
+<meta property="og:image" content="https://lilou2008.github.io/assets/img/logo.png">
+
+<link rel="icon" type="image/png" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background: #0a0e1a;
+  color: #f1f5f9;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+:root {
+  --bg: #0a0e1a;
+  --bg-panel: rgba(15, 22, 40, 0.85);
+  --cyan: #00d4ff;
+  --cyan-glow: rgba(0, 212, 255, 0.35);
+  --violet: #8b5cf6;
+  --violet-glow: rgba(139, 92, 246, 0.35);
+  --green: #10b981;
+  --text: #f1f5f9;
+  --text-dim: #94a3b8;
+  --border: rgba(0, 212, 255, 0.25);
+  --grad: linear-gradient(135deg, #00d4ff 0%, #8b5cf6 100%);
+  --whatsapp: #25d366;
+}
+
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(0, 212, 255, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.08) 0%, transparent 40%),
+    linear-gradient(180deg, #0a0e1a 0%, #0f1729 100%);
+  z-index: -2;
+}
+body::after {
+  content: '';
+  position: fixed; inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+h1, h2, h3, h4 { font-family: 'Orbitron', sans-serif; font-weight: 700; letter-spacing: 0.02em; line-height: 1.2; }
+.gradient-text {
+  background: var(--grad);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed; top: 0; left: 0; right: 0;
+  background: rgba(10, 14, 26, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+  padding: 0.8rem 0;
+}
+.nav-inner {
+  max-width: 1200px; margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.brand { display: flex; align-items: center; gap: 0.7rem; }
+.brand img { width: 44px; height: 44px; object-fit: contain; }
+.brand-text {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900; font-size: 1rem;
+  letter-spacing: 0.12em;
+  line-height: 1;
+}
+.brand-text small {
+  display: block; color: var(--cyan);
+  font-size: 0.65rem; font-weight: 500;
+  letter-spacing: 0.25em; margin-top: 3px;
+}
+.nav-links { display: flex; gap: 1.3rem; align-items: center; }
+.nav-links a {
+  font-weight: 600; font-size: 0.9rem;
+  color: var(--text-dim);
+  transition: color 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.nav-links a:hover { color: var(--cyan); }
+.nav-cta {
+  padding: 0.55rem 1.2rem;
+  background: var(--grad);
+  color: #0a0e1a !important;
+  font-weight: 700 !important;
+  border-radius: 4px;
+  font-size: 0.8rem !important;
+}
+.nav-toggle { display: none; font-size: 1.5rem; color: var(--cyan); }
+@media (max-width: 900px) {
+  .nav-links {
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--bg-panel);
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    display: none;
+  }
+  .nav-links.open { display: flex; }
+  .nav-toggle { display: block; }
+  .brand-text { font-size: 0.85rem; }
+}
+
+section { padding: 5rem 1.5rem; position: relative; }
+.container { max-width: 1200px; margin: 0 auto; }
+.section-title { font-size: clamp(1.8rem, 4vw, 2.8rem); text-align: center; margin-bottom: 0.5rem; text-transform: uppercase; }
+.section-subtitle { text-align: center; color: var(--text-dim); margin-bottom: 3rem; font-size: 1.05rem; max-width: 640px; margin-left: auto; margin-right: auto; }
+.section-divider { width: 100px; height: 3px; background: var(--grad); margin: 1rem auto 2.5rem; border-radius: 2px; box-shadow: 0 0 15px var(--cyan-glow); }
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  padding-top: 6rem; padding-bottom: 3rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: url('assets/img/servicio-automatizacion.jpg') center/cover no-repeat;
+  opacity: 0.18;
+  filter: blur(2px);
+  z-index: -1;
+}
+.hero::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at center, transparent 20%, #0a0e1a 80%);
+  z-index: -1;
+}
+.hero-badge {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  background: rgba(0, 212, 255, 0.1);
+  border: 1px solid var(--cyan);
+  border-radius: 100px;
+  font-size: 0.85rem;
+  color: var(--cyan);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+.hero-logo {
+  width: 180px; height: 180px;
+  margin: 0 auto 1.5rem;
+  object-fit: contain;
+  filter: drop-shadow(0 0 40px var(--cyan-glow));
+  animation: float 4s ease-in-out infinite;
+}
+@keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+.hero h1 { font-size: clamp(2rem, 5.5vw, 4rem); margin-bottom: 1rem; text-transform: uppercase; }
+.hero-tagline { font-size: clamp(1rem, 2.2vw, 1.25rem); color: var(--text-dim); margin-bottom: 0.5rem; max-width: 720px; margin-left: auto; margin-right: auto; }
+.hero-motto { font-family: 'Orbitron', sans-serif; font-size: clamp(0.75rem, 1.5vw, 0.95rem); letter-spacing: 0.4em; color: var(--cyan); margin: 2rem 0; text-transform: uppercase; }
+.hero-cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem; }
+.btn {
+  padding: 0.9rem 2rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700; font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all 0.3s;
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  cursor: pointer;
+}
+.btn-primary { background: var(--grad); color: #0a0e1a; box-shadow: 0 4px 20px var(--cyan-glow); }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 30px var(--cyan-glow); }
+.btn-outline { border: 1px solid var(--cyan); color: var(--cyan); background: transparent; }
+.btn-outline:hover { background: rgba(0, 212, 255, 0.1); }
+.btn-whatsapp { background: var(--whatsapp); color: white; box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
+.btn-whatsapp:hover { transform: translateY(-2px); }
+
+/* STATS */
+.stats {
+  padding: 3rem 1.5rem;
+  background: linear-gradient(90deg, rgba(0,212,255,0.05), rgba(139,92,246,0.05));
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.stats-grid { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; text-align: center; }
+.stat-value { font-family: 'Orbitron', sans-serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 0.3rem; }
+.stat-label { font-size: 0.85rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; }
+
+/* CARDS GRID */
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+.card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s;
+  position: relative;
+  display: flex; flex-direction: column;
+}
+.card::before {
+  content: '';
+  position: absolute; inset: 0;
+  border-radius: 8px;
+  padding: 1px;
+  background: var(--grad);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0; transition: opacity 0.3s;
+  pointer-events: none;
+}
+.card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(0, 212, 255, 0.2); }
+.card:hover::before { opacity: 1; }
+
+.card-image {
+  width: 100%; height: 200px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, rgba(0,212,255,0.1), rgba(139,92,246,0.1));
+  display: flex; align-items: center; justify-content: center;
+}
+.card-image img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.5s;
+  filter: brightness(0.85) contrast(1.05);
+}
+.card:hover .card-image img { transform: scale(1.08); filter: brightness(1) contrast(1.1); }
+.card-image::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(10,14,26,0.7) 100%);
+}
+.card-image.placeholder { font-size: 4.5rem; color: var(--cyan); }
+.card-image.placeholder::after { display: none; }
+
+.card-body {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex; flex-direction: column;
+}
+.card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.7rem;
+  color: var(--cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.card p, .card ul { color: var(--text-dim); font-size: 0.92rem; }
+.card ul { list-style: none; margin: 0.6rem 0; }
+.card ul li { padding: 0.25rem 0 0.25rem 1.2rem; position: relative; }
+.card ul li::before { content: '▸'; position: absolute; left: 0; color: var(--cyan); font-weight: 700; }
+
+.card-price {
+  margin-top: auto; padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  display: flex; align-items: baseline; justify-content: space-between;
+  flex-wrap: wrap; gap: 0.5rem;
+}
+.price-label { font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.1em; }
+.price-value { font-family: 'Orbitron', sans-serif; font-size: 1.35rem; font-weight: 700; color: var(--cyan); }
+.card-cta {
+  display: block; width: 100%;
+  margin-top: 1rem;
+  padding: 0.7rem;
+  text-align: center;
+  background: rgba(37, 211, 102, 0.1);
+  border: 1px solid var(--whatsapp);
+  color: var(--whatsapp);
+  border-radius: 4px;
+  font-weight: 700; font-size: 0.85rem;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  transition: all 0.3s;
+}
+.card-cta:hover { background: var(--whatsapp); color: white; }
+
+/* PRODUCT LIST AND CART */
+.product-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+.product-category { grid-column: 1 / -1; margin-top: 1.5rem; color: var(--cyan); font-size: 1.25rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.product-category:first-child { margin-top: 0; }
+.product-item { background: var(--bg-panel); border: 1px solid var(--border); border-radius: 6px; padding: 1.15rem; display: flex; flex-direction: column; gap: 0.7rem; }
+.product-image { width: 100%; height: 145px; object-fit: contain; background: rgba(0, 212, 255, 0.06); border-bottom: 1px solid var(--border); }
+.product-image-placeholder { display: flex; align-items: center; justify-content: center; color: var(--cyan); font-size: 2.5rem; }
+.product-item h3 { color: var(--cyan); font-size: 1rem; overflow-wrap: anywhere; }
+.product-meta { color: var(--text-dim); font-size: 0.85rem; }
+.product-bottom { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; margin-top: auto; }
+.product-price { font-family: 'Orbitron', sans-serif; color: var(--text); font-size: 1rem; white-space: nowrap; }
+.add-to-cart, .cart-button, .quantity-button { border: 1px solid var(--cyan); color: var(--cyan); border-radius: 4px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+.add-to-cart { padding: 0.45rem 0.7rem; font-size: 0.75rem; }
+.add-to-cart:hover, .cart-button:hover { background: var(--cyan); color: var(--bg); }
+.cart-button { padding: 0.5rem 0.8rem; font-size: 0.8rem; position: relative; }
+.cart-count { display: inline-flex; align-items: center; justify-content: center; min-width: 1.2rem; height: 1.2rem; margin-left: 0.3rem; background: var(--green); color: #fff; border-radius: 50%; font-size: 0.7rem; }
+.cart-panel { position: fixed; top: 0; right: 0; width: min(100%, 380px); height: 100dvh; padding: 5.5rem 1.25rem 1.25rem; background: #0f1628; border-left: 1px solid var(--cyan); transform: translateX(100%); transition: transform 0.25s ease; z-index: 200; display: flex; flex-direction: column; }
+.cart-panel.open { transform: translateX(0); }
+.cart-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: 0.9rem; }
+.cart-header h2 { font-size: 1.05rem; color: var(--cyan); }
+.cart-close { color: var(--text); font-size: 1.5rem; }
+.cart-items { overflow-y: auto; flex: 1; padding: 1rem 0; }
+.cart-empty { color: var(--text-dim); text-align: center; padding: 2rem 0; }
+.cart-line { border-bottom: 1px solid rgba(0, 212, 255, 0.15); padding: 0.8rem 0; }
+.cart-line-top { display: flex; align-items: center; gap: 0.7rem; }
+.cart-line-image { width: 52px; height: 52px; object-fit: contain; background: rgba(0, 212, 255, 0.06); flex: 0 0 52px; }
+.cart-line-name { font-weight: 700; font-size: 0.95rem; }
+.cart-line-controls { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; margin-top: 0.5rem; }
+.quantity-controls { display: flex; align-items: center; gap: 0.45rem; }
+.quantity-button { width: 1.7rem; height: 1.7rem; font-size: 1rem; }
+.cart-total { border-top: 1px solid var(--border); padding-top: 1rem; display: flex; justify-content: space-between; font-family: 'Orbitron', sans-serif; }
+.checkout-button { width: 100%; justify-content: center; margin-top: 1rem; }
+@media (max-width: 900px) { .cart-button { margin-left: auto; margin-right: 0.75rem; } }
+
+/* SECTORS */
+.sectors-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-top: 2rem; }
+.sector-tile {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+.sector-tile:hover { border-color: var(--cyan); transform: translateY(-3px); }
+.sector-icon { font-size: 2.5rem; margin-bottom: 0.6rem; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.sector-tile h4 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text); overflow-wrap: anywhere; }
+
+/* METHODOLOGY */
+.methodology { max-width: 900px; margin: 0 auto; }
+.step {
+  display: flex; gap: 1.5rem; align-items: flex-start;
+  padding: 1.5rem;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.step-number {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem; font-weight: 900;
+  min-width: 60px; height: 60px;
+  border-radius: 50%;
+  background: var(--grad);
+  color: #0a0e1a;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.step-content h4 { color: var(--cyan); font-size: 1.05rem; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.step-content p { color: var(--text-dim); font-size: 0.92rem; }
+
+/* CONTACT */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 1000px; margin: 0 auto; }
+@media (max-width: 720px) { .contact-grid { grid-template-columns: 1fr; } }
+.contact-info { display: flex; flex-direction: column; gap: 1rem; }
+.contact-item {
+  display: flex; gap: 1rem; align-items: flex-start;
+  padding: 1.2rem;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+.contact-item:hover { border-color: var(--cyan); }
+.contact-icon {
+  width: 44px; height: 44px; flex-shrink: 0;
+  background: linear-gradient(135deg, rgba(0,212,255,0.15), rgba(139,92,246,0.15));
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--cyan); font-size: 1.2rem;
+  border: 1px solid var(--cyan);
+}
+.contact-item h4 { font-size: 0.72rem; color: var(--cyan); text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 0.3rem; }
+.contact-item p, .contact-item a { color: var(--text); font-weight: 500; font-size: 0.98rem; }
+.contact-item a:hover { color: var(--cyan); }
+.map-embed {
+  width: 100%; height: 100%; min-height: 380px;
+  border-radius: 8px; border: 1px solid var(--border);
+  filter: invert(0.9) hue-rotate(180deg);
+}
+
+/* FOOTER */
+.footer {
+  padding: 3rem 1.5rem 1.5rem;
+  background: rgba(10, 14, 26, 0.95);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+.footer img { width: 80px; margin: 0 auto 1rem; opacity: 0.9; }
+.footer-brand { font-family: 'Orbitron', sans-serif; font-weight: 900; font-size: 1.1rem; letter-spacing: 0.15em; margin-bottom: 0.5rem; }
+.footer-motto { font-family: 'Orbitron', sans-serif; font-size: 0.8rem; letter-spacing: 0.4em; color: var(--cyan); margin: 1rem 0; text-transform: uppercase; }
+.footer-social { display: flex; justify-content: center; gap: 1rem; margin: 1.5rem 0; }
+.footer-social a {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--cyan); font-size: 1.1rem;
+  transition: all 0.3s;
+}
+.footer-social a:hover { background: var(--grad); color: #0a0e1a; border-color: transparent; transform: translateY(-3px); }
+.footer-copy { color: var(--text-dim); font-size: 0.82rem; margin-top: 1rem; }
+
+/* FLOATING WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px; right: 24px;
+  width: 60px; height: 60px;
+  background: var(--whatsapp);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+  z-index: 99;
+  transition: transform 0.3s;
+  color: white; font-size: 1.8rem;
+  animation: pulse 2s infinite;
+}
+.whatsapp-float:hover { transform: scale(1.1); }
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5); }
+  50% { box-shadow: 0 4px 30px rgba(37, 211, 102, 0.9); }
+}
+
+/* REVEAL */
+.reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="#" class="brand">
+      <img src="assets/img/logo.png" alt="CHG Control & Systems">
+      <div class="brand-text">
+        CHG CONTROL
+        <small>& SYSTEMS</small>
+      </div>
+    </a>
+    <button class="cart-button" id="cartButton" type="button" aria-label="Abrir carrito">Carrito <span class="cart-count" id="cartCount">0</span></button>
+    <div class="nav-links" id="navLinks">
+      <a href="#servicios">Servicios</a>
+      <a href="#productos">Productos</a>
+      <a href="#sectores">Sectores</a>
+      <a href="#metodologia">Método</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://wa.me/51917047436?text=Hola%20CHG%2C%20quiero%20una%20cotización" class="nav-cta">Cotizar</a>
+    </div>
+    <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">▸ Catálogo de Servicios 2026</div>
+    <img src="assets/img/logo.png" alt="CHG Control & Systems" class="hero-logo">
+    <h1><span class="gradient-text">CHG Control</span> & Systems</h1>
+    <p class="hero-tagline">Soluciones integrales en ingeniería, automatización y desarrollo tecnológico para la industria moderna.</p>
+    <div class="hero-motto">◆ Innovación • Control • Confianza ◆</div>
+    <div class="hero-cta">
+      <a href="https://wa.me/51917047436?text=Hola%20CHG%2C%20quiero%20una%20cotización" class="btn btn-whatsapp">
+        📱 Cotizar por WhatsApp
+      </a>
+      <a href="#servicios" class="btn btn-outline">Ver Servicios</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stats-grid">
+    <div><div class="stat-value">+10</div><div class="stat-label">Años de Experiencia</div></div>
+    <div><div class="stat-value">+100</div><div class="stat-label">Proyectos Realizados</div></div>
+    <div><div class="stat-value">+50</div><div class="stat-label">Clientes Satisfechos</div></div>
+    <div><div class="stat-value">24/7</div><div class="stat-label">Soporte Disponible</div></div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+  <div class="container">
+    <h2 class="section-title">Nuestros <span class="gradient-text">Servicios</span></h2>
+    <div class="section-divider"></div>
+    <p class="section-subtitle">Ingeniería y tecnología a la medida de tu empresa. Precios referenciales — solicita tu cotización exacta.</p>
+
+    <div class="cards-grid">
+
+      <div class="card reveal">
+        <div class="card-image"><img src="assets/img/servicio-electrica.jpg" alt="Ingeniería Eléctrica"></div>
+        <div class="card-body">
+          <h3>⚡ Ingeniería Eléctrica</h3>
+          <ul>
+            <li>Diseño de sistemas eléctricos</li>
+            <li>Instalaciones industriales y comerciales</li>
+            <li>Tableros eléctricos y distribución</li>
+            <li>Mantenimiento preventivo y correctivo</li>
+          </ul>
+          <div class="card-price"><span class="price-label">Desde</span><span class="price-value">S/ 800</span></div>
+          <a href="https://wa.me/51917047436?text=Hola%2C%20quiero%20cotizar%20servicios%20de%20Ingeniería%20Eléctrica" class="card-cta">Cotizar por WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="card-image"><img src="assets/img/servicio-automatizacion.jpg" alt="Automatización y Control"></div>
+        <div class="card-body">
+          <h3>⚙️ Automatización y Control</h3>
+          <ul>
+            <li>Sistemas PLC (Siemens, Allen Bradley)</li>
+            <li>SCADA y control de procesos</li>
+            <li>HMI e interfaces industriales</li>
+            <li>Robotización de líneas de producción</li>
+          </ul>
+          <div class="card-price"><span class="price-label">Desde</span><span class="price-value">S/ 1,500</span></div>
+          <a href="https://wa.me/51917047436?text=Hola%2C%20quiero%20cotizar%20Automatización%20y%20Control" class="card-cta">Cotizar por WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="card-image"><img src="assets/img/servicio-redes.jpg" alt="Redes y Telecomunicaciones"></div>
+        <div class="card-body">
+          <h3>📡 Redes y Telecomunicaciones</h3>
+          <ul>
+            <li>Cableado estructurado</li>
+            <li>Redes de voz y datos</li>
+            <li>Fibra óptica industrial</li>
+            <li>Enlaces punto a punto</li>
+          </ul>
+          <div class="card-price"><span class="price-label">Desde S/</span><span class="price-value">80 / punto</span></div>
+          <a href="https://wa.me/51917047436?text=Hola%2C%20quiero%20cotizar%20Redes%20y%20Telecomunicaciones" class="card-cta">Cotizar por WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="card-image"><img src="assets/img/servicio-seguridad.jpg" alt="Seguridad Electrónica"></div>
+        <div class="card-body">
+          <h3>🛡️ Seguridad Electrónica</h3>
+          <ul>
+            <li>Sistemas CCTV HD y 4K</li>
+            <li>Control de acceso biométrico</li>
+            <li>Alarmas inteligentes</li>
+            <li>Monitoreo remoto 24/7</li>
+          </ul>
+          <div class="card-price"><span class="price-label">Desde</span><span class="price-value">S/ 990</span></div>
+          <a href="https://wa.me/51917047436?text=Hola%2C%20quiero%20cotizar%20Seguridad%20Electrónica" class="card-cta">Cotizar por WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="card-image"><img src="assets/img/servicio-software.jpg" alt="Desarrollo de Software"></div>
+        <div class="card-body">
+          <h3>💻 Desarrollo de Software</h3>
+          <ul>
+            <li>Sistemas de monitoreo a medida</li>
+            <li>Interfaces industriales (HMI)</li>
+            <li>Aplicaciones web y móvil</li>
+            <li>Integración de datos e IoT</li>
+          </ul>
+          <div class="card-price"><span class="price-label">Desde</span><span class="price-value">S/ 2,500</span></div>
+          <a href="https://wa.me/51917047436?text=Hola%2C%20quiero%20cotizar%20Desarrollo%20de%20Software" class="card-cta">Cotizar por WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="card-image"><img src="assets/img/servicio-hardware.jpg" alt="Desarrollo de Hardware"></div>
+        <div class="card-body">
+          <h3>🔧 Desarrollo de Hardware</h3>
+          <ul>
+            <li>Diseño de circuitos electrónicos</li>
+            <li>Dispositivos IoT personalizados</li>
+            <li>Prototipos electrónicos y mecánicos</li>
+            <li>Sistemas embebidos a medida</li>
+          </ul>
+          <div class="card-price"><span class="price-label">Desde</span><span class="price-value">S/ 1,200</span></div>
+          <a href="https://wa.me/51917047436?text=Hola%2C%20quiero%20cotizar%20Desarrollo%20de%20Hardware" class="card-cta">Cotizar por WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTOS -->
+<section id="productos" style="background: linear-gradient(180deg, transparent, rgba(139, 92, 246, 0.03));">
+  <div class="container">
+    <h2 class="section-title">Más <span class="gradient-text">Vendidos</span></h2>
+    <div class="section-divider"></div>
+    <p class="section-subtitle">Componentes, equipos eléctricos y soluciones para electrónica, automatización y prototipado.</p>
+    <div class="product-list" id="productList"></div>
+  </div>
+</section>
+
+<!-- SECTORES -->
+<section id="sectores">
+  <div class="container">
+    <h2 class="section-title">Sectores que <span class="gradient-text">Atendemos</span></h2>
+    <div class="section-divider"></div>
+    <p class="section-subtitle">Soluciones tecnológicas adaptadas a las exigencias de cada industria.</p>
+    <div class="sectors-grid">
+      <div class="sector-tile"><div class="sector-icon">🏭</div><h4>Industria Manufacturera</h4></div>
+      <div class="sector-tile"><div class="sector-icon">⛏️</div><h4>Minería</h4></div>
+      <div class="sector-tile"><div class="sector-icon">🏗️</div><h4>Construcción</h4></div>
+      <div class="sector-tile"><div class="sector-icon">📡</div><h4>Telecomunicaciones</h4></div>
+      <div class="sector-tile"><div class="sector-icon">⚡</div><h4>Energía y Electricidad</h4></div>
+      <div class="sector-tile"><div class="sector-icon">💼</div><h4>Empresas Tecnológicas</h4></div>
+    </div>
+  </div>
+</section>
+
+<!-- METODOLOGÍA -->
+<section id="metodologia" style="background: linear-gradient(180deg, transparent, rgba(0, 212, 255, 0.03));">
+  <div class="container">
+    <h2 class="section-title">Nuestra <span class="gradient-text">Metodología</span></h2>
+    <div class="section-divider"></div>
+    <p class="section-subtitle">Un proceso probado para garantizar la calidad y el éxito de cada proyecto.</p>
+    <div class="methodology">
+      <div class="step reveal"><div class="step-number">01</div><div class="step-content"><h4>Análisis</h4><p>Evaluamos tus necesidades, procesos y entorno para definir la mejor solución técnica y económica.</p></div></div>
+      <div class="step reveal"><div class="step-number">02</div><div class="step-content"><h4>Diseño</h4><p>Creamos soluciones personalizadas con tecnología escalable y eficiente adaptada a tu presupuesto.</p></div></div>
+      <div class="step reveal"><div class="step-number">03</div><div class="step-content"><h4>Implementación</h4><p>Ejecutamos el proyecto con precisión, cumpliendo estándares de calidad y seguridad internacionales.</p></div></div>
+      <div class="step reveal"><div class="step-number">04</div><div class="step-content"><h4>Pruebas y Validación</h4><p>Verificamos el funcionamiento y rendimiento para asegurar resultados óptimos y confiables.</p></div></div>
+      <div class="step reveal"><div class="step-number">05</div><div class="step-content"><h4>Soporte 24/7</h4><p>Brindamos soporte técnico continuo para garantizar la operatividad y evolución de tus sistemas.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="container">
+    <h2 class="section-title">Solicita tu <span class="gradient-text">Cotización</span></h2>
+    <div class="section-divider"></div>
+    <p class="section-subtitle">Respondemos tu consulta en menos de 24 horas.</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div><h4>Dirección</h4><p>Calle Pedro Bertonelli 229<br>San Juan de Miraflores, Lima</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div><h4>WhatsApp / Teléfono</h4><a href="tel:+51917047436">+51 917 047 436</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div><h4>Correo Electrónico</h4><a href="mailto:contacto@chgcontrol.com">contacto@chgcontrol.com</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🌐</div>
+          <div><h4>Redes Sociales</h4><p>CHG Control & Systems</p></div>
+        </div>
+        <a href="https://wa.me/51917047436?text=Hola%20CHG%2C%20quiero%20una%20cotización" class="btn btn-whatsapp" style="width: 100%; justify-content: center; margin-top: 0.5rem;">
+          💬 Escríbenos por WhatsApp
+        </a>
+      </div>
+      <div>
+        <iframe class="map-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.5!2d-76.9754!3d-12.155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCalle%20Pedro%20Bertonelli%20229%2C%20San%20Juan%20de%20Miraflores!5e0!3m2!1ses!2spe!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <img src="assets/img/logo.png" alt="CHG Control & Systems">
+  <div class="footer-brand"><span class="gradient-text">CHG CONTROL</span> & SYSTEMS</div>
+  <p style="color: var(--text-dim); font-size: 0.88rem;">Soluciones tecnológicas integrales para la industria moderna</p>
+  <div class="footer-motto">◆ Innovación • Control • Confianza ◆</div>
+  <div class="footer-social">
+    <a href="#" title="LinkedIn">in</a>
+    <a href="#" title="Facebook">f</a>
+    <a href="#" title="Instagram">◎</a>
+    <a href="https://wa.me/51917047436" title="WhatsApp">✆</a>
+  </div>
+  <div class="footer-copy">© 2026 CHG Control & Systems. Todos los derechos reservados.</div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/51917047436?text=Hola%20CHG%2C%20quiero%20una%20cotización" class="whatsapp-float" title="WhatsApp" aria-label="WhatsApp">💬</a>
+
+<!-- CARRITO -->
+<aside class="cart-panel" id="cartPanel" aria-label="Carrito de compras" aria-hidden="true">
+  <div class="cart-header">
+    <h2>Carrito de compras</h2>
+    <button class="cart-close" id="cartClose" type="button" aria-label="Cerrar carrito">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-total"><span>Total</span><span id="cartTotal">S/ 0.00</span></div>
+  <a class="btn btn-whatsapp checkout-button" id="checkoutButton" href="https://wa.me/51917047436">Enviar pedido por WhatsApp</a>
+</aside>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+}, { threshold: 0.15 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+});
+
+const products = [
+  { id: 'esp32', name: 'ESP32 DevKit / ESP32-WROOM-32', category: 'Componentes electrónicos', price: 30, demand: 'Demanda muy alta', image: 'assets/img/esp32-devkitc-v4-front.jpg' },
+  { id: 'nano', name: 'Arduino Nano V3 / ATmega328P', category: 'Componentes electrónicos', price: 20, demand: 'Demanda muy alta', image: 'assets/img/arduino-nano-v3.0-atmega328p-ch340-chip-i-type-c-soldered9-550x550.jpg' },
+  { id: 'rele', name: 'Módulo relé 5 V (1/2/4 canales)', category: 'Componentes electrónicos', price: 6, demand: 'Demanda muy alta', image: 'assets/img/relay.jpg' },
+  { id: 'resistencias', name: 'Resistencias 1/4 W / kit surtido', category: 'Componentes electrónicos', price: 10, demand: 'Demanda muy alta', image: 'assets/img/resistores.webp' },
+  { id: 'protoboard', name: 'Protoboard de 830 puntos', category: 'Componentes electrónicos', price: 13, demand: 'Demanda alta', image: 'assets/img/protoboard.jpg' },
+  { id: 'dupont', name: 'Cables Dupont M-M / M-H / H-H', category: 'Componentes electrónicos', price: 10, demand: 'Demanda alta', image: 'assets/img/cablesFemaleJumper.webp' },
+  { id: 'capacitores', name: 'Capacitores electrolíticos', category: 'Componentes electrónicos', price: 0.30, demand: 'Demanda alta', image: 'assets/img/capacitores_electroliticos.jpg' },
+  { id: 'lm2596', name: 'LM2596 Step-Down DC-DC', category: 'Componentes electrónicos', price: 7, demand: 'Demanda alta', image: 'assets/img/lm2596s.webp' },
+  { id: 'hc-sr04', name: 'Sensor ultrasónico HC-SR04', category: 'Componentes electrónicos', price: 9, demand: 'Demanda alta', image: 'assets/img/ultrasonido.jpg' },
+  { id: 'led', name: 'LED 3 mm / 5 mm', category: 'Componentes electrónicos', price: 0.10, demand: 'Demanda alta', image: 'assets/img/leds.jpg' },
+  { id: 'transistores', name: 'Transistores BC547 / 2N2222 / TIP41', category: 'Componentes electrónicos', price: 0.50, demand: 'Demanda media', image: 'assets/img/trasistor.jpg' },
+  { id: 'mosfet', name: 'MOSFET IRFZ44N / IRF540 / similares', category: 'Componentes electrónicos', price: 2, demand: 'Demanda media', image: 'assets/img/mosfet.webp' },
+  { id: 'reguladores', name: 'Reguladores 7805 / 7812 / AMS1117', category: 'Componentes electrónicos', price: 1, demand: 'Demanda media', image: 'assets/img/regulador5v.jpg' },
+  { id: 'integrados', name: 'NE555 / LM358 / LM393', category: 'Componentes electrónicos', price: 1, demand: 'Demanda media', image: 'assets/img/regulador5v.jpg' },
+  { id: 'diodos', name: 'Diodos 1N4007 / 1N4148 / Schottky', category: 'Componentes electrónicos', price: 0.10, demand: 'Demanda media', image: 'assets/img/diodos.jpg' },
+  { id: 'megohmetro', name: 'Maleta de altas resistencias para calibración de megóhmetros', category: 'Equipos eléctricos', price: 850, demand: 'Consultar disponibilidad', image: 'assets/img/MALETA_MEGOHMETRO.jpeg' },
+  { id: 'decada-telurometro', name: 'Década / telurómetro de prueba', category: 'Equipos eléctricos', price: 320, demand: 'Consultar disponibilidad', image: 'assets/img/DECADA_TELU.jpg' },
+  { id: 'pinza-amperimetrica', name: 'Pinza amperimétrica', category: 'Equipos eléctricos', price: 180, demand: 'Consultar disponibilidad', image: 'assets/img/pinza.jpg' },
+  { id: 'multimetro', name: 'Multímetro digital', category: 'Equipos eléctricos', price: 95, demand: 'Consultar disponibilidad', image: 'assets/img/multimetro.jpg' },
+  { id: 'megohmetro-profesional', name: 'Megóhmetro profesional', category: 'Equipos eléctricos', price: 1250, demand: 'Consultar disponibilidad', image: 'assets/img/megohmetro.png' },
+  { id: 'telurometro', name: 'Telurómetro digital', category: 'Equipos eléctricos', price: 980, demand: 'Consultar disponibilidad', image: 'assets/img/telurometro.jpg' }
+];
+
+const formatPrice = (price) => `S/ ${price.toFixed(2)}`;
+const productList = document.getElementById('productList');
+const cartPanel = document.getElementById('cartPanel');
+const cartItems = document.getElementById('cartItems');
+const cartCount = document.getElementById('cartCount');
+const cartTotal = document.getElementById('cartTotal');
+const checkoutButton = document.getElementById('checkoutButton');
+let cart = JSON.parse(localStorage.getItem('chg-cart') || '{}');
+
+productList.innerHTML = [...new Set(products.map((product) => product.category))].map((category) => `
+  <h3 class="product-category">${category}</h3>
+  ${products.filter((product) => product.category === category).map((product) => `
+    <article class="product-item">
+      ${product.image ? `<img class="product-image" src="${product.image}" alt="${product.name}">` : `<div class="product-image product-image-placeholder" role="img" aria-label="Foto pendiente de ${product.name}">${product.icon}</div>`}
+      <h3>${product.name}</h3>
+      <p class="product-meta">${product.demand}</p>
+      <div class="product-bottom">
+        <span class="product-price">Desde ${formatPrice(product.price)}</span>
+        <button class="add-to-cart" type="button" data-product-id="${product.id}">Agregar</button>
+      </div>
+    </article>
+  `).join('')}
+`).join('');
+
+function saveCart() {
+  localStorage.setItem('chg-cart', JSON.stringify(cart));
+}
+
+function updateCart() {
+  const lines = products.filter((product) => cart[product.id]);
+  const quantity = lines.reduce((total, product) => total + cart[product.id], 0);
+  const total = lines.reduce((sum, product) => sum + product.price * cart[product.id], 0);
+  cartCount.textContent = quantity;
+  cartTotal.textContent = formatPrice(total);
+  cartItems.innerHTML = lines.length ? lines.map((product) => `
+    <div class="cart-line">
+      <div class="cart-line-top">
+        <img class="cart-line-image" src="${product.image}" alt="">
+        <div class="cart-line-name">${product.name}</div>
+      </div>
+      <div class="cart-line-controls">
+        <div class="quantity-controls">
+          <button class="quantity-button" type="button" data-product-id="${product.id}" data-change="-1" aria-label="Quitar una unidad">-</button>
+          <span>${cart[product.id]}</span>
+          <button class="quantity-button" type="button" data-product-id="${product.id}" data-change="1" aria-label="Agregar una unidad">+</button>
+        </div>
+        <strong>${formatPrice(product.price * cart[product.id])}</strong>
+      </div>
+    </div>
+  `).join('') : '<p class="cart-empty">Aún no agregaste productos.</p>';
+  const message = lines.length
+    ? `Hola CHG, deseo realizar el siguiente pedido:%0A%0A${lines.map((product) => `- ${product.name} x${cart[product.id]}: ${formatPrice(product.price * cart[product.id])}`).join('%0A')}%0A%0ATotal: ${formatPrice(total)}`
+    : 'Hola CHG, deseo consultar por sus productos.';
+  checkoutButton.href = `https://wa.me/51917047436?text=${encodeURIComponent(decodeURIComponent(message))}`;
+  saveCart();
+}
+
+function changeQuantity(productId, change) {
+  cart[productId] = (cart[productId] || 0) + change;
+  if (cart[productId] <= 0) delete cart[productId];
+  updateCart();
+}
+
+document.getElementById('cartButton').addEventListener('click', () => {
+  cartPanel.classList.add('open');
+  cartPanel.setAttribute('aria-hidden', 'false');
+});
+document.getElementById('cartClose').addEventListener('click', () => {
+  cartPanel.classList.remove('open');
+  cartPanel.setAttribute('aria-hidden', 'true');
+});
+productList.addEventListener('click', (event) => {
+  const button = event.target.closest('[data-product-id]');
+  if (button) changeQuantity(button.dataset.productId, 1);
+});
+cartItems.addEventListener('click', (event) => {
+  const button = event.target.closest('[data-change]');
+  if (button) changeQuantity(button.dataset.productId, Number(button.dataset.change));
+});
+updateCart();
+</script>
+
+</body>
+</html>
